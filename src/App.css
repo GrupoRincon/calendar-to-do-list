@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif !important;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary-color:#0c5adb;
+	--text-white:#fff;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    box-sizing: content-box;
+    align-items: stretch;
+}
+
+.sidebar-list{
+	box-shadow: 5px 5px 20px #ccc;
+	padding: 20px;
+	flex-grow: 1;
+}
+
+.calendar{
+	flex-grow: 11;
+}
+
+.new-task{
+	border-radius: 15px;
+	background-color: var(--primary-color);
+	padding: 10px 15px;
+	color: var(--text-white);
+	border: none;
+	cursor: pointer;
+}
+
+.new-task {
+	position: fixed;
+	right:20px;
+	bottom:20px;
+	min-width: 130px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+	background: #2c0b8e;
+   z-index: 1;
+  }
+
+  .form-group > input{
+	width:100%;
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding:8px;
+  }
+
+  .rbc-row-content {
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 0 !important;
+}
+
+.btn{
+	min-width: 130px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+	background: #2c0b8e;
+}
+
+.mr-top{
+	margin-top: 15px;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open{
+	padding: 42px !important;
+}
+
+.card{
+	padding: 20px;
+    box-shadow: 10px 10px 15px #cccccc59;
+    background: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.btn-success {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding: 5px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn-success:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.btn-success:active {
+	position:relative;
+	top:1px;
+}
